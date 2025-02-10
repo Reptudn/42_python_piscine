@@ -2,7 +2,7 @@ def all_thing_is_obj(object: any) -> int:
     objType = type(object)
 
     if objType == int:           # doesnt make sense
-        print("Type not found")  # everything in python is an object
+        print("Type not found")
     elif objType == str:
         print(f"{object} is in the kitchen : {objType}")
     else:

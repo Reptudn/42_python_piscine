@@ -13,5 +13,5 @@ def NULL_not_found(object: any) -> int:
         print(f"Fake: {object} {objType}")
     else:
         print("Type not found")
-        return 0
-    return 1
+        return 1
+    return 0

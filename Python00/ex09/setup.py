@@ -1,5 +1,9 @@
 from setuptools import setup, find_packages
 
+"""
+setup.py is a script that helps you to distribute
+your Python application.
+"""
 setup(
     name="ft_package",
     version="1.0.0",

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ft_package"
+version = "1.0.0"
+description = "Don't bother using it"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+    { name = "jkauker", email = "jkauker@student.42heilbronn.de" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["ft_package"]

@@ -9,7 +9,7 @@ lst = list(ft_tuple)
 lst[1] = "Germany"
 ft_tuple = tuple(lst)
 
-ft_set.remove("tutu!")
+ft_set.discard("tutu!")
 ft_set.add("Heilbronn")
 
 ft_dict["Hello"] = "42Heilbronn"
