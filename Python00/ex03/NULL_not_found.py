@@ -1,6 +1,17 @@
 def NULL_not_found(object: any) -> int:
     objType = type(object)
 
-    print(f"{objType.__name__.capitalize()} : {type(object)}")
-
-    return 1 if objType == None else 0
+    if object is None:
+        print(f"Nothing: {object} {objType}")
+    elif objType is float:
+        print(f"Cheese: {object} {objType}")
+    elif objType is int:
+        print(f"Zero: {object} {objType}")
+    elif object == '':
+        print(f"Empty: {object} {objType}")
+    elif objType is bool:
+        print(f"Fake: {object} {objType}")
+    else:
+        print("Type not found")
+        return 0
+    return 1
