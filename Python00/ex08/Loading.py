@@ -3,11 +3,17 @@ import shutil
 
 
 def format_time(seconds: float) -> str:
+    """
+    Convert seconds to a human readable format
+    """
     mins, secs = divmod(seconds, 60)
     return f"{int(mins):02}:{int(secs):02}"
 
 
 def ft_tqdm(lst: range) -> None:  # type: ignore
+    """
+    works the same as tqdm but self written
+    """
     width = shutil.get_terminal_size().columns
     bar_width = width - 40
     start = time.time()

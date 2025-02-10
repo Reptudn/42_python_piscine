@@ -41,6 +41,9 @@ NESTED_MORSE = {
 }
 
 if __name__ == "__main__":
+    """
+    text to morse code
+    """
     try:
         if len(sys.argv) == 2:
             if any(not (c.isalnum() or c.isspace()) for c in sys.argv[1]):

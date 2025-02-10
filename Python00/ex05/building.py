@@ -5,13 +5,13 @@ def count_stuff(s: str) -> None:
     """
     s (input string): The text to analyze
 
-    Prints the following information:
-    1. The number of characters in the text
-    2. The number of upper case letters
-    3. The number of lower case letters
-    4. The number of punctuation marks
-    5. The number of spaces
-    6. The number of digits
+    Prints some information about the given text like:
+    - Number of characters
+    - Number of upper case letters
+    - Number of lower case letters
+    - Number of punctuation marks
+    - Number of spaces
+    - Number of digits
     """
     print(f"The text contains {len(s)} characters:")
     print(f"{sum(1 for c in s if c.isupper())} upper letters")
